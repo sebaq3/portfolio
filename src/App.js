@@ -1,6 +1,6 @@
 // App.js
-import React from 'react';
-import Header from '.Header';
+import React, { useState } from 'react';
+import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -8,13 +8,19 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+    const [language, setLanguage] = useState('es');
+
+    const handleLanguageChange = (selectedLanguage) => {
+        setLanguage(selectedLanguage);
+    };
+
     return (
         <div className="App">
-            <Header />
-            <About />
-            <Projects />
-            <Contact />
-            <Footer />
+            <Header language={language} onLanguageChange={handleLanguageChange} />
+            <About language={language} />
+            <Projects language={language} />
+            <Contact language={language} />
+            <Footer language={language} />
         </div>
     );
 }
