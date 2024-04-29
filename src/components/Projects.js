@@ -23,7 +23,7 @@ function Projects({language}) {
     ];
 
     return (
-        <section id="projects">
+        <section className="container" id="projects">
             <h2>Proyectos</h2>
             <div className="projects-container">
                 {projects.map(project => (

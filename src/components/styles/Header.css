@@ -1,0 +1,81 @@
+/* Header.css */
+header {
+    background-color: #333;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+h1 ,nav{
+    color: #fff;
+    display: inline-block; /* Hace que los elementos se comporten como bloque pero se alineen en línea */
+    vertical-align: middle; /* Alinea verticalmente los elementos en el medio */
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+/*     display: flex;
+    justify-content: flex-end; */
+}
+
+nav ul li {
+    display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+select {
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    appearance: none;
+}
+nav ul li:first-child {
+    margin-left: 0;
+    flex-grow: 1; /* Hacer que el primer elemento se expanda para ocupar el espacio restante */
+}
+
+nav ul li:first-child a {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+}
+
+
+
+/* Media query para hacer el menú responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    select {
+        margin-left: 0;
+    }
+}

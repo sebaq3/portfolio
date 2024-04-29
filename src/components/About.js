@@ -1,5 +1,6 @@
 // About.js
 import React from 'react';
+import './styles/About.css'
 
 function About({ language }) {
     const content = {
@@ -14,12 +15,14 @@ function About({ language }) {
     };
 
     return (
-        <section id="about">
-            <h2>{content[language].title}</h2>
-            <div className="about-content">
-                <p>{content[language].description}</p>
-            </div>
-        </section>
+        <section className="about-container">
+            <section className="container" id="about">
+                <h2>{content[language].title}</h2>
+                <div className="about-content">
+                    <p>{content[language].description}</p>
+                </div>
+            </section>
+        </section>    
     );
 }
 

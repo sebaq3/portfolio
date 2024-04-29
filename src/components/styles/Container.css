@@ -1,0 +1,20 @@
+/* Container.css */
+
+.container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Establece la dirección de los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    padding: 20px; /* Agrega un relleno para los elementos */
+    box-sizing: border-box; /* Asegura que el relleno y el borde se incluyan en el tamaño total */
+    background-color: #333; /* Cambia el color de fondo a gris oscuro */
+    color: #fff; /* Cambia el color del texto a blanco */
+    max-width: 500px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+}
+
+/* Estilo para cada elemento dentro del contenedor */
+.container > * {
+    margin: 10px 0; /* Agrega márgenes verticales entre los elementos */
+    max-width: 300px; /* Establece un ancho máximo para cada elemento */
+}

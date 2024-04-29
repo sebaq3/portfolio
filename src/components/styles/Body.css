@@ -1,0 +1,5 @@
+body {
+    background-color: #454444; /* Color similar al del encabezado */
+    margin: 0; /* Asegura que no haya márgenes predeterminados */
+    padding-top: 60px; /* Ajusta el relleno superior para compensar el encabezado fijo */
+}

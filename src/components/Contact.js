@@ -3,7 +3,7 @@ import React from 'react';
 
 function Contact({language}) {
     return (
-        <section id="contact">
+        <section className="container" id="contact">
             <h2>Contacto</h2>
             <p>¡Ponte en contacto conmigo para colaboraciones o cualquier pregunta!</p>
             <form>
