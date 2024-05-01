@@ -7,7 +7,7 @@ function Contact({language}) {
         <section className="container" id="contact">
             <h2>Contacto</h2>
             <p>¡Ponte en contacto conmigo para colaboraciones o cualquier pregunta!</p>
-            <form>
+            <form action="http://localhost:5000/submit-form" method="post">
                 <table>
                     <tbody>
                         <tr>
