@@ -1,31 +1,32 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-import smtplib
+import os
+import subprocess
+
+# Carga las variables de entorno desde el archivo .env
+EMAIL = os.getenv('EMAIL')
 
 app = Flask(__name__)
 CORS(app)
 
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
-    data = request.form
-    name = data['name']
-    email = data['email']
-    message = data['message']
-
-    # Envía el correo electrónico
-    sender_email = 'sebaq3@gmail.com'
-    receiver_email = 'sebaq3@gmail.com'
-    subject = f'Nuevo mensaje de {name}'
-    body = f'Nombre: {name}\nEmail: {email}\nMensaje: {message}'
-
     try:
-        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        server.login(sender_email, 'tucontraseña')
-        server.sendmail(sender_email, receiver_email, f'Subject: {subject}\n\n{body}')
-        server.quit()
-        return 'Formulario enviado exitosamente'
+        data = request.json
+        name = data['name']
+        email = data['email']
+        message = data['message']
+
+        # Construye el cuerpo del correo electrónico
+        body = f"Nombre: {name}\nEmail: {email}\nMensaje: {message}"
+        
+        # Envía el correo electrónico usando Sendmail
+        sendmail_command = f"echo '{body}' | sendmail -t -f {EMAIL}"
+        subprocess.run(sendmail_command, shell=True)
+        
+        return jsonify({'message': 'Formulario enviado exitosamente'})
     except Exception as e:
-        return f'Error al enviar el formulario: {str(e)}'
+        return jsonify({'error': f'Error al enviar el formulario: {str(e)}'})
 
 if __name__ == '__main__':
     app.run(debug=True)
