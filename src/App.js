@@ -20,9 +20,9 @@ function App() {
         <div className="App">
             <Header language={language} onLanguageChange={handleLanguageChange} />
             <div className="content"> {/* Aplica la clase 'content' aquí */}
-                <About language={language} />
-                <Projects language={language} />
-                <Contact language={language} />
+                <div className="about-container"><About language={language} /></div>                
+                <div className="projects-container"><Projects language={language} /></div>
+                <div className="contact-container"><Contact language={language} /></div>
             </div>    
             <Footer language={language} />
         </div>

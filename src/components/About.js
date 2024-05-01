@@ -15,7 +15,7 @@ function About({ language }) {
     };
 
     return (
-        <section className="about-container">
+        <section>
             <section className="container" id="about">
                 <h2>{content[language].title}</h2>
                 <div className="about-content">

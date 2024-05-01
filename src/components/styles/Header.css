@@ -6,6 +6,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 h1 ,nav{

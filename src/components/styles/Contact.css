@@ -1,0 +1,13 @@
+/* Contact.css */
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+    margin-bottom: 10px; /* Agrega un margen inferior de 20px entre cada grupo de formulario */
+}
+
+label {
+    display: inline-block; /* Hace que las etiquetas sean elementos en línea con ancho */
+    width: 100px; /* Establece un ancho fijo para todas las etiquetas */
+    text-align: right; /* Alinea el texto a la derecha dentro de las etiquetas */
+    margin-right: 10px; /* Agrega un margen derecho para separar las etiquetas de los input */
+}

@@ -1,20 +1,64 @@
 /* Container.css */
 
 .container {
-    display: flex; /* Utiliza flexbox para el diseño */
-    flex-direction: column; /* Establece la dirección de los elementos en columna */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    padding: 20px; /* Agrega un relleno para los elementos */
-    box-sizing: border-box; /* Asegura que el relleno y el borde se incluyan en el tamaño total */
-    background-color: #333; /* Cambia el color de fondo a gris oscuro */
-    color: #fff; /* Cambia el color del texto a blanco */
-    max-width: 500px; /* Establece un ancho máximo para el contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #333;
+    color: #ffffff;
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: 0 auto;
 }
 
-/* Estilo para cada elemento dentro del contenedor */
-.container > * {
-    margin: 10px 0; /* Agrega márgenes verticales entre los elementos */
-    max-width: 300px; /* Establece un ancho máximo para cada elemento */
+
+/* Estilo para la tabla de contenido adicional */
+.additional-content {
+    margin-bottom: 20px; /* Espacio entre la tabla y los proyectos */
 }
+
+.additional-content table {
+    width: 100%;
+}
+
+.additional-content table td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo para cada fila de proyectos */
+.projects-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espacio entre filas */
+    color: #000000; /* Color de texto */
+}
+
+/* Estilo para cada proyecto */
+.project {
+    flex: 0 0 30%;
+    max-width: 30%;
+    border: 1px solid #282020; /* Añadir borde blanco alrededor de cada proyecto */
+    padding: 10px; /* Añadir espacio interno alrededor del contenido del proyecto */
+    box-sizing: border-box; /* Asegurar que el borde se incluya en el tamaño total */
+}
+
+/* Estilo para las imágenes de los proyectos */
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para los enlaces de proyectos */
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo adicional según sea necesario */
+
+/* Separador entre contenido adicional y proyectos */
+
