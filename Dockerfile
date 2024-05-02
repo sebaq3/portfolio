@@ -8,7 +8,9 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies for Node.js
-RUN npm install       
+RUN npm install
+
+RUN npm run build
 
 # Expose port 3000 for Node.js app
 EXPOSE 3000
