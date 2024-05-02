@@ -5,7 +5,7 @@ import './styles/About.css';
 function About({ language }) {
     const content = {
         es: {
-            title: "Sobre Mí - Sitio ejemplo",
+            title: "Sobre Mí - Sitio ejemplo ",
             description: `¡Hola! Soy Sebastian, un desarrollador apasionado por la tecnología y la creación de experiencias digitales. Desde sitios web hasta aplicaciones complejas. ¡Gracias por visitar mi sitio!`
         },
         en: {
