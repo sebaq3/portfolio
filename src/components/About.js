@@ -6,7 +6,7 @@ function About({ language }) {
     const content = {
         es: {
             title: "Sobre Mí",
-            description: "Mi nombre es Sebastian. Soy un desarrollador web apasionado por la creación de experiencias digitales increíbles. Estoy creando una Web a modo de ejemplo usando ReactJS y un servidor de mail con python"
+            description: "Mi nombre es Sebastian. Soy un desarrollador web apasionado por la creación de experiencias digitales increíbles. ..."
         },
         en: {
             title: "About Me",
