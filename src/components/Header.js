@@ -1,15 +1,11 @@
-// Header.js
 import React from 'react';
-//import '.src/styles/Header.css'; // Importar los estilos CSS
 import './styles/Header.css';
-
-
-
 
 function Header({ language, onLanguageChange }) {
     const handleChange = (e) => {
         onLanguageChange(e.target.value);
     };
+
     const handleClick = (targetId) => {
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
@@ -42,12 +38,11 @@ function Header({ language, onLanguageChange }) {
         es: "CV",
         en: "CV"
     };
-
     const contact = {
         es: "Contacto",
         en: "Contact"
     };
-    
+
     return (
         <header>
             <h1></h1>
@@ -60,8 +55,7 @@ function Header({ language, onLanguageChange }) {
                     <li><a href="/CV_Scrosoppi_Sebastian.pdf" download>{cv[language]}</a></li>
                     <li><a href="#Contact" onClick={() => handleClick('contact')}>{contact[language]}</a></li>
                     <li>
-                        <select onChange={handleChange}>
-                            <option value="" disabled selected>Languaje</option>
+                        <select onChange={handleChange} defaultValue={language}>
                             <option value="es">Español</option>
                             <option value="en">Inglés</option>
                         </select>

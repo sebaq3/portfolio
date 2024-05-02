@@ -1,16 +1,16 @@
 // About.js
 import React from 'react';
-import './styles/About.css'
+import './styles/About.css';
 
 function About({ language }) {
     const content = {
         es: {
             title: "Sobre Mí",
-            description: "Mi nombre es Sebastian. Soy un desarrollador web apasionado por la creación de experiencias digitales increíbles. ..."
+            description: `¡Hola! Soy Sebastian, un desarrollador web apasionado por la tecnología y la creación de experiencias digitales excepcionales. Desde sitios web intuitivos hasta aplicaciones complejas, mi objetivo es siempre combinar funcionalidad con un diseño atractivo. ¡Gracias por visitar mi sitio!`
         },
         en: {
             title: "About Me",
-            description: "My name is [Tu Nombre]. I am a web developer passionate about creating amazing digital experiences. ..."
+            description: `Hello there! I'm Sebastian, a web developer passionate about technology and crafting exceptional digital experiences. From intuitive websites to complex applications, my goal is always to combine functionality with appealing design. Thanks for visiting my site!`
         }
     };
 

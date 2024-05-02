@@ -1,19 +1,15 @@
 /* Container.css */
 
 .container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
     background-color: #333;
     color: #ffffff;
     max-width: 800px; /* Ajusta según sea necesario */
     margin: 0 auto;
 }
-
 
 /* Estilo para la tabla de contenido adicional */
 .additional-content {
@@ -25,8 +21,15 @@
 }
 
 .additional-content table td {
-    text-align: center;
     padding: 10px;
+}
+
+.additional-content table .left-content {
+    text-align: left; /* Alineación a la izquierda para datos personales */
+}
+
+.additional-content table .right-content {
+    text-align: center; /* Alineación al centro para Intereses */
 }
 
 /* Estilo para cada fila de proyectos */
@@ -49,7 +52,8 @@
 /* Estilo para las imágenes de los proyectos */
 .project img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Establecer la altura deseada para todas las imágenes */
+    object-fit: cover; /* Ajustar las imágenes para cubrir todo el contenedor sin distorsionar */
 }
 
 /* Estilo para los enlaces de proyectos */
@@ -57,8 +61,10 @@
     display: flex;
     justify-content: space-between;
 }
-
+.project-table img:hover {
+    transform: scale(1.1); /* Cambia el valor para ajustar el nivel de aumento */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
 /* Estilo adicional según sea necesario */
 
 /* Separador entre contenido adicional y proyectos */
-
