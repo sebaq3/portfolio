@@ -1,0 +1,19 @@
+/* global.css */
+body {
+  background: linear-gradient(to bottom, #004d99, #add8e6); /* Fondo degradado */
+  margin: 0;
+  padding: 0;
+}
+
+/* styles.css */
+.fade {
+  transition: opacity 2.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

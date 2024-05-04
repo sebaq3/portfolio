@@ -13,8 +13,8 @@ RUN npm install
 RUN npm run build
 
 # Expose port 3000 for Node.js app
-EXPOSE 3000
+EXPOSE 5173
 
 # Define the entry point for the container
-CMD ["npm", "start"]
+CMD ["npm", "run dev"]
 

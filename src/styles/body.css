@@ -1,0 +1,22 @@
+/* body.css */
+.container {
+  position: relative;
+  width: 100vh;
+  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.container > div {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  transition: opacity 2.5s ease;
+}
+
+.container > div.fade-out {
+  opacity: 0;
+}
+
+.container > div.fade-in {
+  opacity: 1;
+}

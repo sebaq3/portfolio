@@ -1,0 +1,26 @@
+/* footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #333; /* Cambiar a gris oscuro */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .right a {
+  margin-left: 10px;
+}
+
+.footer .right img {
+  width: 30px; /* Tamaño específico para los iconos */
+  height: 30px;
+}
