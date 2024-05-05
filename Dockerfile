@@ -10,11 +10,11 @@ COPY . /app
 # Install the application dependencies for Node.js
 RUN npm install
 
-#RUN npm run build
+RUN npm run build
 
 # Expose port 3000 for Node.js app
-EXPOSE 5173
+EXPOSE 4173
 
 # Define the entry point for the container
-CMD ["npm", "run dev"]
+CMD ["npm", "run", "preview"]
 
