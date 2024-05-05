@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="left">
-        <p>{language === 'es' ? 'Frase motivacional aquí' : 'Motivational phrase here'}</p>
-        <p>Email: example@example.com</p>
+        <p>{language === 'es' ? 'Frase motivacional aquí traida de api  ' : 'Motivational phrase here API  '}</p>
+        <p>Email: sebaq3@gmail.com</p>
       </div>
       <div className="right">
         <a href="www.linkedin.com/in/sebastian-scrosoppi-709a3966"><img src={linkedinIcon} alt="LinkedIn" className="icon" /></a>

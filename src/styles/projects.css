@@ -8,7 +8,6 @@
   opacity: 1;
 }
 
-/* styles.css */
 .fade {
   transition: opacity 2.5s ease;
 }
@@ -28,6 +27,7 @@
   justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal (horizontal) */
   flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea cuando no haya suficiente espacio */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho de su contenedor principal */
+  margin-top: 80px;
 }
 
 .project {

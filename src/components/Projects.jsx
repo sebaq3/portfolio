@@ -1,4 +1,3 @@
-// Projects.jsx
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import '../styles/projects.css';
@@ -31,16 +30,20 @@ const Projects = ({ show }) => {
     <div className={`projects ${show ? 'fade-in' : ''}`}>
       <h2>{language === 'es' ? 'Proyectos' : 'Projects'}</h2>
       <div className="content">
-        {projectsData.map(project => (
-          <div key={project.id} className="project-item">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img src={project.imageUrl} alt={project.title} className="project-image" />
-            </a>
-          </div>
-        ))}
+        <div className="project-container">
+          {projectsData.map(project => (
+            <div key={project.id} className="project">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img className="project-image" src={project.imageUrl} alt={project.title} />
+              </a>
+              <p>{project.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
 export default Projects;
+
