@@ -16,6 +16,10 @@
   margin: 0;
 }
 
+.footer .left a {
+  color: #000; /* Cambiar el color del enlace a negro */
+}
+
 .footer .right a {
   margin-left: 10px;
 }
@@ -24,3 +28,8 @@
   width: 30px; /* Tamaño específico para los iconos */
   height: 30px;
 }
+
+.project-image:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% en hover */
+}
+

@@ -14,13 +14,13 @@ const Projects = ({ show }) => {
     },
     {
       id: 2,
-      title: language === 'es' ? 'Python alpr' : 'Python alpr',
+      title: language === 'es' ? 'Python ALPR' : 'Python ALPR',
       imageUrl: 'https://icon.icepanel.io/Technology/svg/TensorFlow.svg',
       link: 'https://github.com/sebaq3/anlpr'
     },
     {
       id: 3,
-      title: language === 'es' ? 'Proyecto 3' : 'Project 3',
+      title: language === 'es' ? 'Proyecto Personal C++' : 'Personal Project C++',
       imageUrl: 'https://icon.icepanel.io/Technology/svg/C%2B%2B-%28CPlusPlus%29.svg',
       link: 'https://github.com/sebaq3/cortina'
     }

@@ -2,6 +2,10 @@
 .projects {
   opacity: 0;
   transition: opacity 4.5s ease; /* Transición suave de la opacidad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  
 }
 
 .projects.fade-in {
@@ -24,19 +28,25 @@
 
 .project-container {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del eje principal (horizontal) */
+  
   flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea cuando no haya suficiente espacio */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho de su contenedor principal */
   margin-top: 80px;
 }
 
 .project {
-  flex: 0 1 calc(33.333% - 10px); /* Establece el tamaño de cada proyecto, con un margen de 10px entre ellos */
+  flex: 0 1 calc(23.333%); /* Establece el tamaño de cada proyecto, con un margen de 10px entre ellos */
   text-align: center; /* Centra el contenido */
-  margin-bottom: 20px; /* Espacio entre las filas */
+  margin-bottom: 5px; /* Espacio entre las filas */
 }
 
 .project-image {
   width: 100px; /* Asegura que la imagen no supere el ancho del contenedor */
   height: auto; /* Hace que la altura de la imagen se ajuste automáticamente */
+  transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.project-image:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% en hover */
 }
