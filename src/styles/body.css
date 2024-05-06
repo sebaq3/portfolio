@@ -1,8 +1,8 @@
 /* body.css */
 .container {
-  position: relative;
-  width: 100vh;
-  height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  
+  width: 100%;
+  height: 100%; /* Hace que el contenedor ocupe toda la altura de la pantalla */
 }
 
 .container > div {
