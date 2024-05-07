@@ -1,4 +1,4 @@
-<img width="80%" align="center" src="https://github.com/Dorota1997/react-frontend-dev-portfolio/blob/images/images/portfolio_mockup.png" alt="portfolio template mockup" /> <br/>
+<img width="80%" align="center" src="https://github.com/sebaq3/portfolio/blob/main/public/cap.png" alt="portfolio template mockup" /> <br/>
 
 
 <img align="left" src="https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/react.svg" height="50" alt="react icon"/>
