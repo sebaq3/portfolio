@@ -9,7 +9,7 @@ const Projects = ({ show }) => {
     {
       id: 1,
       title: language === 'es' ? 'Este proyecto React-Vite' : 'This project React-Vite',
-      imageUrl: 'https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/react.svg',
+      imageUrl: 'https://raw.githubusercontent.com/leungwensen/svg-icon/8b84d725b0d2be8f5d87cac7f2c386682ce43563/dist/svg/logos/react.svg',
       link: 'https://github.com/sebaq3/portfolio'
     },
     {
