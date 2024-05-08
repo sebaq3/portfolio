@@ -9,7 +9,9 @@
     "preview": "vite preview --port 8080"
   },
   "dependencies": {
-    "preact": "^10.19.6"
+    "dotenv": "^16.4.5",
+    "preact": "^10.19.6",
+    "vite-plugin-radar": "^0.9.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.8.2",

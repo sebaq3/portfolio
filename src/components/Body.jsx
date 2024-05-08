@@ -31,10 +31,6 @@ const Body = () => {
     <>
       
         <div>
-
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL6CZTK2"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
           <Header setShowAboutMe={setShowAboutMe} setShowProjects={setShowProjects} setShowInicio={setShowInicio} />
           <div className="container">
             <Inicio show={showInicio}/>     
