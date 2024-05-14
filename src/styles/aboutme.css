@@ -1,7 +1,11 @@
 /* aboutme.css */
 .about-me {
+  display: flex; /* Utilizamos flexbox */
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  align-items: center; /* Centramos verticalmente los elementos */  
   opacity: 0;
   transition: opacity 3.5s ease; /* Transición suave de la opacidad */
+  margin-top: 80px; /* Ajustamos la posición vertical de la imagen */
 }
 
 .about-me h2 {
@@ -9,11 +13,14 @@
 }
 
 .about-me .content {
+  text-align: center; /* Alineación justificada para el contenido */
+  margin-bottom: 20px; /* Espacio entre el título y el contenido */
   margin-top: 20px;
 }
 
 .about-me .content p {
   margin-bottom: 10px;
+  
 }
 
 .about-me.fade-in {
@@ -31,4 +38,9 @@
 
 .fade-out {
   opacity: 0;
+}
+.imagen {
+  width: 100%; /* Ajustamos el ancho de la imagen */
+  max-width: 300px; /* Ancho máximo de la imagen */
+  margin-top: 20px; /* Espacio entre el contenido y la imagen */
 }
