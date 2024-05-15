@@ -11,11 +11,13 @@ const Inicio = ({ show }) => {
 	console.log(asd2);
 	console.log(show);
 
-	
+	if (!show) {
+		return null;
+	}
 	
     return (    
     	<>			
-			<div className={`inicio ${show ? 'fade-in' : ''}`}>
+			<div className="inicio">
 				<video autoPlay muted loop className="video-background">
 					<source src="https://qanplatform.com/_nuxt/qan-anim-02.bc047b0d.mp4" type="video/mp4" />
 					Tu navegador no soporta videos HTML5.

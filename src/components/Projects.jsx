@@ -4,6 +4,9 @@ import '../styles/projects.css';
 
 const Projects = ({ show }) => {
   const { language } = useLanguage();
+  if (!show) {
+    return null;
+  }
 
   const projectsData = [
     {
@@ -27,7 +30,7 @@ const Projects = ({ show }) => {
   ];
 
   return (
-    <div className={`projects ${show ? 'fade-in' : ''}`}>
+    <div className="projects">
       <h2>{language === 'es' ? 'Proyectos' : 'Projects'}</h2>
       <div className="content">
         <div className="project-container">

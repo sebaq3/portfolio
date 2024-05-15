@@ -13,10 +13,4 @@
   transition: opacity 2.5s ease;
 }
 
-.container > div.fade-out {
-  opacity: 0;
-}
 
-.container > div.fade-in {
-  opacity: 1;
-}

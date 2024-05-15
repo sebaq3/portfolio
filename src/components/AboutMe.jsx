@@ -6,12 +6,13 @@ import '../styles/aboutme.css';
 
 const AboutMe = ({ show }) => {
   const { language } = useLanguage();
-
+  if (!show) {
+    return null;
+  }
 
   return (
     <>
-      <div className={`about-me ${show ? 'fade-in' : ''}`}>
-        
+      <div className= "about-me">        
         <div className="content">
         <h2>{language === 'es' ? 'Sobre mí' : 'About Me'}</h2>
           <p>{language === 'es' ? 'Soy un programador apasionado por las tecnologías web y móviles.' : 'I am a programmer passionate about web and mobile technologies.'}</p>
