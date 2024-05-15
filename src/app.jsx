@@ -7,8 +7,6 @@ import './app.css'
 import './styles/global.css';
 
 export function App() {
-  
-
   return (
     <>
       <StateProvider>
@@ -21,5 +19,5 @@ export function App() {
         </LanguageProvider> 
       </StateProvider>   
     </>
-  )
+  );
 }

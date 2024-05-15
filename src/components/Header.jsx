@@ -1,29 +1,26 @@
-// Header.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useStateContext } from '../contexts/StateContext'; // Importa useStateContext
+import { useStateContext } from '../contexts/StateContext';
 import '../styles/header.css';
 
-const Header = ({ setShowAboutMe, setShowProjects, handleInicioFalse }) => {
+const Header = ({ setShowAboutMe, setShowProjects, setInicio }) => {
   const { language, changeLanguage } = useLanguage();
-  const { showInicio, setShowInicio } = useStateContext();
+  const { setShowInicio } = useStateContext(); // Cambia el nombre para evitar conflictos
 
   const handleLanguageChange = (e) => {
     changeLanguage(e.target.value);
   };
 
-
-
   const handleAboutMeClick = () => {
     setShowAboutMe(true);
     setShowProjects(false);
-    setShowInicio(false);
+    setShowInicio(false); // Usamos el valor de contexto aquí
   };
 
   const handleProjectsClick = () => {
     setShowAboutMe(false);
     setShowProjects(true);
-    setShowInicio(false); 
+    setShowInicio(false); // Usamos el valor de contexto aquí
   };
 
   return (
@@ -36,7 +33,7 @@ const Header = ({ setShowAboutMe, setShowProjects, handleInicioFalse }) => {
         <a href="#" onClick={handleProjectsClick}>{language === 'es' ? 'Proyectos' : 'Projects'}</a>
         <select value={language} onChange={handleLanguageChange}>
           <option value="en">English</option>
-          <option value="es">Español</option>          
+          <option value="es">Español</option>
         </select>
       </div>
     </header>

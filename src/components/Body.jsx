@@ -4,36 +4,27 @@ import Header from './Header';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Inicio from './Inicio';
-import '../styles/body.css'; // Importa el archivo de estilos para Body
-import { useStateContext } from '../contexts/StateContext'; // Importa StateProvider
+import '../styles/body.css';
+import { useStateContext } from '../contexts/StateContext';
 
 const Body = () => {
   const [showAboutMe, setShowAboutMe] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
   const { showInicio, setShowInicio } = useStateContext();
 
-  const handleInicioFalse = () => {
-    setShowInicio(false);
-  };
-  const handleShowAboutMe = () => {
-    setShowAboutMe(true);
-    setShowProjects(false); // Ocultar Projects cuando se muestra About Me
-    setShowInicio(false);
-  };
 
-  const handleShowProjects = () => {
-    setShowAboutMe(false); // Ocultar About Me cuando se muestra Projects
-    setShowProjects(true);
-    setShowInicio(false);
-  };
 
   return (
     <>
       
         <div>
-          <Header setShowAboutMe={setShowAboutMe} setShowProjects={setShowProjects} setShowInicio={setShowInicio} />
+          <Header 
+          setShowAboutMe={setShowAboutMe} 
+          setShowProjects={setShowProjects} 
+          setInicio={setShowInicio} 
+          />
           <div className="container">
-            <Inicio show={showInicio}/>     
+            <Inicio show={showInicio} />
             <AboutMe show={showAboutMe} />
             <Projects show={showProjects} />
           </div>
