@@ -1,28 +1,72 @@
-/* aboutme.css */
 .about-me {
-  display: flex; /* Utilizamos flexbox */
-  justify-content: center; /* Centramos horizontalmente los elementos */
-  align-items: center; /* Centramos verticalmente los elementos */  
-  transition: opacity 3.5s ease; /* Transición suave de la opacidad */
-  margin-top: 80px; /* Ajustamos la posición vertical de la imagen */
-}
-
-.about-me h2 {
-  color: #fff; /* Color del título */
-}
-
-.about-me .content {
-  text-align: center; /* Alineación justificada para el contenido */
-  margin-bottom: 20px; /* Espacio entre el título y el contenido */
+  display: flex;
+  flex-direction: column; /* Alineamos los elementos en columna */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3.5s ease;
   margin-top: 20px;
 }
 
-.about-me .content p {
-  margin-bottom: 10px;
-  
+.about-me h2 {
+  color: #fff;
 }
+
+.about-me .content {
+  display: flex;
+  flex-direction: column; /* Alineamos los elementos en columna */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about-me .contenido1,
+.about-me .contenido2 {
+  display: flex;
+  flex-direction: row; /* Alineamos los elementos en fila */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin-bottom: 20px; /* Añade separación entre filas */  
+}
+
+
+.izquierda {
+  display: flex;
+  flex-direction: column; /* Alineamos los elementos en columna */
+  justify-content: center; /* Alinea los elementos verticalmente al centro */
+  align-items: flex-end; /* Alinea los elementos horizontalmente al centro */
+  width: 45%; /* Ancho del 45% para cada columna */
+  text-align: right;  
+}
+
+
+.derecha {
+  display: flex;
+  flex-direction: column; /* Alineamos los elementos en columna */
+  justify-content: center; /* Alinea los elementos verticalmente al centro */
+  width: 45%; /* Ancho del 45% para cada columna */
+  margin-left: auto; /* Alinea a la derecha */
+  text-align: left;  
+}
+
+
+.about-me .content p {
+  margin-bottom: 5px;  
+}
+
 .imagen {
-  width: 100%; /* Ajustamos el ancho de la imagen */
-  max-width: 300px; /* Ancho máximo de la imagen */
-  margin-top: 20px; /* Espacio entre el contenido y la imagen */
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.derecha p {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente el texto al centro */
+}
+
+.video-background { 
+  border-radius: 20px; /* Redondea las esquinas del video */
+  width: 5%; /* Haz que el video sea más pequeño */
+  height: auto; /* Mantiene la relación de aspecto */
 }

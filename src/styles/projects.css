@@ -22,6 +22,10 @@
   margin-bottom: 5px; /* Espacio entre las filas */
 }
 
+.projects h2{
+  color: #fff;
+}
+
 .project-image {
   width: 100px; /* Asegura que la imagen no supere el ancho del contenedor */
   height: auto; /* Hace que la altura de la imagen se ajuste automáticamente */
