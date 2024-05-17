@@ -1,17 +1,38 @@
 /* inicio.css */
 .inicio {
-  
-  transition: opacity 4.5s ease; /* Transición suave de la opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40vh;
+  padding: 20px;  
+  margin: 0;
+  margin-top: 80px;     
+  transition: opacity 4.5s ease; 
 }
 
 .video-background {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente el video */
+
   border-radius: 20px; /* Redondea las esquinas del video */
   width: 25%; /* Haz que el video sea más pequeño */
   height: auto; /* Mantiene la relación de aspecto */
+  flex: 0;
+  position: absolute;
+  right: 20px;
+
+}
+
+.titulo-inicio {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  margin: 0;
+  text-align: right;
+  flex: 1;  
+
+  transform: translate(-50%, -50%); /* Ajusta para que el punto central del texto sea el centro de la pantalla */
 }
 
 

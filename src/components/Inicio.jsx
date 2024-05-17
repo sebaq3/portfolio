@@ -18,6 +18,7 @@ const Inicio = ({ show }) => {
     return (    
     	<>			
 			<div className="inicio">
+				<h2 class="titulo-inicio">Hi! I'm Seba</h2>
 				<video autoPlay muted loop className="video-background">
 					<source src="https://qanplatform.com/_nuxt/qan-anim-02.bc047b0d.mp4" type="video/mp4" />
 					Tu navegador no soporta videos HTML5.
