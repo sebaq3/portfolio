@@ -5,7 +5,7 @@ import '../styles/header.css';
 
 const Header = ({ setShowAboutMe, setShowProjects, setInicio }) => {
   const { language, changeLanguage } = useLanguage();
-  const { setShowInicio } = useStateContext(); // Cambia el nombre para evitar conflictos
+  const { setShowInicio } = useStateContext(); 
 
   const handleLanguageChange = (e) => {
     changeLanguage(e.target.value);
