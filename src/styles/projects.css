@@ -4,26 +4,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra verticalmente */
-  
 }
 
 .project-container {
   display: flex;
-  
   flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea cuando no haya suficiente espacio */
   justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho de su contenedor principal */
   margin-top: 80px;
+  font-weight: bold;
 }
 
 .project {
   flex: 0 1 calc(23.333%); /* Establece el tamaño de cada proyecto, con un margen de 10px entre ellos */
   text-align: center; /* Centra el contenido */
   margin-bottom: 5px; /* Espacio entre las filas */
+  position: relative; /* Asegura que los detalles del proyecto se posicionen correctamente */
 }
 
-.projects h2{
+.projects h2 {
   color: #fff;
+  font-size: 35px;
 }
 
 .project-image {
@@ -34,4 +35,25 @@
 
 .project-image:hover {
   transform: scale(1.1); /* Escala la imagen al 110% en hover */
+}
+
+.project-details {
+  position: absolute;
+  top: 110%; /* Posiciona el componente de detalles justo debajo de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para los detalles */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /* Ancho fijo para el componente de detalles */
+  text-align: left; /* Alinea el texto a la izquierda */
+  z-index: 10; /* Asegura que el componente de detalles esté por encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar un efecto de elevación */
+  opacity: 0; /* Oculta el componente por defecto */
+  transition: opacity 0.3s ease; /* Añade una transición suave al mostrar/ocultar */
+}
+
+.project:hover .project-details {
+  opacity: 1; /* Muestra el componente de detalles al hacer hover */
 }
