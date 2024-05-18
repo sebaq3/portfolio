@@ -3,7 +3,8 @@ import React, { useState, useEffect  } from 'react';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Inicio from './Inicio';
-import Resume from './Resume';
+import Cv from './Cv';
+
 import '../styles/body.css';
 
 
@@ -16,7 +17,8 @@ const Body = () => {
         <Inicio />
         <AboutMe />
         <Projects />
-        <Resume />
+        <Cv />
+
       </div>      
     </>
   );

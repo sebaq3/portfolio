@@ -1,0 +1,46 @@
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    max-width: 80vw; /* Ajustar máximo ancho al 90% del ancho de la ventana */
+    width: 80vw; /* Ajustar ancho al 90% del ancho de la ventana */
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    font-weight: bold;
+  }
+  
+  .cv-container img {
+    border-radius: 10px;
+    width: 50%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    margin: 10px 0;
+  }
+  
+  .cv-container button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cv-container button:hover {
+    background-color: #0056b3;
+  }
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Quita la subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre los botones y las imágenes */
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+  }

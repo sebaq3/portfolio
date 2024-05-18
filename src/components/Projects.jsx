@@ -39,7 +39,7 @@ const Projects = () => {
 
 
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h2>{language === 'es' ? 'Proyectos' : 'Projects'}</h2>
       <div className="content">
         <div className="project-container">

@@ -8,7 +8,7 @@ const AboutMe = () => {
 //https://www.youtube.com/results?search_query=mouredev+portfolio
   return (
     <>
-      <div className="about-me">
+      <div id="about-me" className="about-me">
         <div className="contenido1">
           <div className="izquierda">
             <h2>{language === 'es' ? 'Sobre mí' : 'About Me'}</h2>
