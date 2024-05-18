@@ -3,59 +3,44 @@
   flex-direction: column; /* Alineamos los elementos en columna */
   justify-content: center;
   align-items: center;
-  transition: opacity 3.5s ease;
   margin-top: 20px;
+  margin: 20px 0;
+  width: 100%;
+
 }
 
 .about-me h2 {
   color: #fff;
   font-size: 35px;
 }
-
-.about-me .content {
+.contenido1, .contenido2 {
   display: flex;
-  flex-direction: column; /* Alineamos los elementos en columna */
-  justify-content: center;
+  flex-direction: row; /* Alineamos los elementos hijos en fila */
+  justify-content: space-between; /* Distribuimos el espacio entre los elementos */
   align-items: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color:black;
-  font-size: 18px;
+  margin: 20px 0;
 }
 
-.about-me .contenido1,
-.about-me .contenido2 {
+.izquierda, .derecha {
+  flex: 1;
   display: flex;
-  flex-direction: row; /* Alineamos los elementos en fila */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  margin-bottom: 20px; /* Añade separación entre filas */  
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-
-.izquierda {
-  display: flex;
-  flex-direction: column; /* Alineamos los elementos en columna */
-  justify-content: center; /* Alinea los elementos verticalmente al centro */
-  align-items: flex-end; /* Alinea los elementos horizontalmente al centro */
-  width: 45%; /* Ancho del 45% para cada columna */
-  text-align: right;  
+.izquierda{
+  text-align: right;
+  align-items:flex-end;
+  padding: 10px;
 }
 
-
-.derecha {
-  display: flex;
-  flex-direction: column; /* Alineamos los elementos en columna */
-  justify-content: center; /* Alinea los elementos verticalmente al centro */
-  width: 45%; /* Ancho del 45% para cada columna */
-  margin-left: auto; /* Alinea a la derecha */
-  text-align: left;  
+.derecha{
+  text-align: left;
+  align-items:flex-start;
+  padding: 10px;
 }
 
-
-.about-me .content p {
-  margin-bottom: 5px;  
-}
 
 .imagen {
   width: 100%;
@@ -68,10 +53,6 @@
   transform: scale(1.05); /* Escala la imagen al 110% en hover */
 }
 
-.derecha p {
-  display: flex;
-  justify-content: center; /* Alinea horizontalmente el texto al centro */
-}
 
 .video-background { 
   border-radius: 20px; /* Redondea las esquinas del video */

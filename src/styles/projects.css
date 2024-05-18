@@ -1,6 +1,5 @@
 /* projects.css */
-.projects {
-  transition: opacity 4.5s ease; /* Transición suave de la opacidad */
+.projects {  
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra verticalmente */
@@ -24,7 +23,8 @@
 
 .projects h2 {
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .project-image {
@@ -39,7 +39,7 @@
 
 .project-details {
   position: absolute;
-  top: 110%; /* Posiciona el componente de detalles justo debajo de la imagen */
+  bottom: 110%; /* Posiciona el componente de detalles justo debajo de la imagen */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para los detalles */
@@ -52,8 +52,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar un efecto de elevación */
   opacity: 0; /* Oculta el componente por defecto */
   transition: opacity 0.3s ease; /* Añade una transición suave al mostrar/ocultar */
+  
 }
 
 .project:hover .project-details {
   opacity: 1; /* Muestra el componente de detalles al hacer hover */
+}
+
+.project-detail-image {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-top: 10px; /* Añade espacio encima de la imagen */
 }

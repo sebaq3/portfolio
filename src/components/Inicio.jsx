@@ -1,30 +1,49 @@
-// Inicio.jsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/inicio.css';
-import { useStateContext } from '../contexts/StateContext';
+import { useLanguage } from '../contexts/LanguageContext';
 
-const Inicio = ({ show }) => {
-	const asd = import.meta.env.VITE_PRUEBA_SECRETA;
-	const asd2 = import.meta.env.PRUEBA_SECRETA;
-	const { showInicio } = useStateContext();
-	console.log(asd);
-	console.log(asd2);
-	console.log(show);
+const Inicio = () => {
+  const { language } = useLanguage();
+  const textsToType = ["|FullStack|", "|NodeJs, React|", "|Python, Django|"];
+  const [typedText, setTypedText] = useState(textsToType[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const typingSpeed = 100; // Velocidad de escritura (milisegundos)
 
-	if (!show) {
-		return null;
-	}
-	
-    return (    
-    	<>			
-			<div className="inicio">
-				<h2 class="titulo-inicio">Hi! I'm Seba</h2>
-				<video autoPlay muted loop className="video-background">
-					<source src="https://qanplatform.com/_nuxt/qan-anim-02.bc047b0d.mp4" type="video/mp4" />
-					Tu navegador no soporta videos HTML5.
-				</video>	
-			</div>
-		</>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      
+      setCurrentIndex(prevIndex => (prevIndex + 1) % textsToType.length);
+    }, 3000); // Cambia el intervalo de cambio de texto según lo necesites
+
+    return () => clearInterval(interval);
+  }, [textsToType.length]);
+
+  useEffect(() => {
+    setTypedText(textsToType[currentIndex]);
+  }, [currentIndex, textsToType]);
+
+  
+
+
+  return (    
+    <>      
+      <div className="inicio">
+        <div className="izquierda">
+        
+          <h2 className="titulo-inicio">{language === 'es' ? 'Hola! Soy Seba' : 'Hi! Im Seba'}</h2>
+          <p className="typed-text">{typedText}</p>
+        </div>
+        <div className="derecha">
+          <video autoPlay muted loop className="video-background">
+            <source src="https://qanplatform.com/_nuxt/qan-anim-02.bc047b0d.mp4" type="video/mp4" />
+            Tu navegador no soporta videos HTML5.
+          </video>
+        </div>
+        
+      </div>
+      <hr className="linea-horizontal" />
+    </>
   );
 }
 

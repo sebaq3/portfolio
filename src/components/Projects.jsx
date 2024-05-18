@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import '../styles/projects.css';
 
-const Projects = ({ show }) => {
+const Projects = () => {
   const { language } = useLanguage();
   const [selectedProject, setSelectedProject] = useState(null);
 
 
-  if (!show) {
-    return null;
-  }
+
 
   const projectsData = [
     {
@@ -38,13 +36,7 @@ const Projects = ({ show }) => {
     }
   ];
 
-  const handleMouseEnter = (project) => {
-    setSelectedProject(project);
-  };
 
-  const handleMouseLeave = () => {
-    setSelectedProject(null);
-  };
 
   return (
     <div className="projects">
@@ -54,20 +46,16 @@ const Projects = ({ show }) => {
           {projectsData.map(project => (
             <div 
               key={project.id} 
-              className="project"
-              onMouseEnter={() => handleMouseEnter(project)}
-              onMouseLeave={handleMouseLeave}
+              className="project"          
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img className="project-image" src={project.imageUrl} alt={project.title} />
               </a>
-              <p>{project.title}</p>
-              {selectedProject && selectedProject.id === project.id && (
-                <div className="project-details">
-                  <p>{selectedProject.description}</p>
-                  <img className='project-detail-image' src={selectedProject.descriptionImage} alt="alt" />
-                </div>
-              )}
+              <p>{project.title}</p>              
+              <div className="project-details">
+                <p>{project.description}</p>
+                <img className='project-detail-image' src={project.descriptionImage} alt="alt" />
+              </div>              
             </div>
           ))}
         </div>

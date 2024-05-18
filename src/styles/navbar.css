@@ -1,5 +1,5 @@
 /* navbar.css */
-.header {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +32,23 @@
   margin-right: 20px;
   color: white;
   text-decoration: none;
+  position: relative;
+}
+
+.right a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: blue;
+  transition: width 0.3s;
+  bottom: -2px;
+  left: 0;
+}
+
+.right a:hover::after {
+  width: 100%;
 }
 
 select {
