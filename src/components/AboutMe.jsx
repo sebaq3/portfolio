@@ -11,7 +11,7 @@ const AboutMe = () => {
       <div id="about-me" className="about-me">
         <div className="contenido1">
           <div className="izquierda">
-            <h2>{language === 'es' ? 'Sobre mí' : 'About Me'}</h2>
+            <p className="titulo">{language === 'es' ? 'Sobre mí' : 'About Me'}</p>
             <p>{language === 'es' ? 'Soy un programador apasionado por las tecnologías web y móviles.' : 'I am a programmer passionate about web and mobile technologies.'}</p>
             <p>{language === 'es' ? 'Tengo experiencia en el desarrollo con JavaScript, Node.js, React y Python.' : 'Have experience in development with JavaScript, Node.js, React, and Python.'}</p>
             <p>{language === 'es' ? 'Me encanta aprender nuevas tecnologías y resolver problemas desafiantes.' : 'Love learning new technologies and solving challenging problems.'}</p>         

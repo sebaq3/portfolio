@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects">
-      <h2>{language === 'es' ? 'Proyectos' : 'Projects'}</h2>
+      <p className="titulo">{language === 'es' ? 'Proyectos' : 'Projects'}</p>
       <div className="content">
         <div className="project-container">
           {projectsData.map(project => (

@@ -4,13 +4,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-weight: bold;
+  
   background: linear-gradient(to bottom, #add8e6, #004d99);
 }
 
-.about-me h2 {
+.titulo{
   color: #fff;
-  font-size: 35px;
+  font-size: 40px;
 }
 .contenido1, .contenido2 {
   display: flex;

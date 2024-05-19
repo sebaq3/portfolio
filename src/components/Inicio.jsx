@@ -31,7 +31,7 @@ const Inicio = () => {
       <div id="inicio" className="inicio">
         <div className="izquierda">
         
-          <h2 className="titulo-inicio">{language === 'es' ? 'Hola! Soy Seba' : 'Hi! Im Seba'}</h2>
+          <p className="titulo-inicio">{language === 'es' ? 'Hola! Soy Seba' : 'Hi! Im Seba'}</p>
           <p className="typed-text">{typedText}</p>
         </div>
         <div className="derecha">

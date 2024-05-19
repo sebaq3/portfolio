@@ -22,7 +22,7 @@
   position: relative; /* Asegura que los detalles del proyecto se posicionen correctamente */
 }
 
-.projects h2 {
+.titulo {
   color: #fff;
   font-size: 40px;
   text-align: center;
