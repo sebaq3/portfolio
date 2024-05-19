@@ -12,8 +12,10 @@ const Cv = () => {
       <a className="download-button" href={`/${fileName}`} download={fileName}>
         {language === 'es' ? 'Descargar' : 'Download'}
       </a>
-      <img src="/CV_Scrosoppi_Sebastian_1.png" alt="Imagen 1" />
-      <img src="/CV_Scrosoppi_Sebastian_2.png" alt="Imagen 2" />
+      <div className="imagenes"> 
+        <img src="/CV_Scrosoppi_Sebastian_1.png" alt="Imagen 1" />
+        <img src="/CV_Scrosoppi_Sebastian_2.png" alt="Imagen 2" />
+      </div>
       <a className="download-button" href={`/${fileName}`} download={fileName}>
         {language === 'es' ? 'Descargar' : 'Download'}
       </a>

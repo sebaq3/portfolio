@@ -2,13 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    padding: 20px;
+    
+
+
+    font-weight: bold;
+    background: linear-gradient(to bottom, #add8e6, #004d99); 
+  }
+  .imagenes{
     max-width: 80vw; /* Ajustar máximo ancho al 90% del ancho de la ventana */
     width: 80vw; /* Ajustar ancho al 90% del ancho de la ventana */
+    max-width: 80vw; /* Ajustar máximo ancho al 90% del ancho de la ventana */
+    width: 80vw; /* Ajustar ancho al 90% del ancho de la ventana */
+    padding: 20px;
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 80px;
-    font-weight: bold;
   }
   
   .cv-container img {

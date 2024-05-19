@@ -3,8 +3,6 @@
   flex-direction: column; /* Alineamos los elementos en columna */
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin: 20px 0;
   width: 100%;
   font-weight: bold;
   background: linear-gradient(to bottom, #add8e6, #004d99);
