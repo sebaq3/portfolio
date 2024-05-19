@@ -7,6 +7,7 @@
   margin: 20px 0;
   width: 100%;
   font-weight: bold;
+  background: linear-gradient(to bottom, #add8e6, #004d99);
 }
 
 .about-me h2 {

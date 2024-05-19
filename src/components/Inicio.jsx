@@ -42,7 +42,7 @@ const Inicio = () => {
         </div>
         
       </div>
-      <hr className="linea-horizontal" />
+
     </>
   );
 }

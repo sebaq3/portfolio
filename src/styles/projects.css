@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra verticalmente */
+  background: linear-gradient(to bottom, #004d99, #add8e6);
 }
 
 .project-container {
