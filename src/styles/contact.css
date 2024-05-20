@@ -1,0 +1,67 @@
+.contact {
+    background: linear-gradient(to bottom, #004d99, #add8e6);
+    padding: 20px 0 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que el contenido esté centrado */
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004d99;
+    font-size: 24px; /* Ajusta el tamaño de la fuente si es necesario */
+    font-weight: bold;
+}
+
+.contact label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    align-self: flex-start; /* Asegura que los labels estén alineados a la izquierda */
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact button {
+    background: #004d99;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho del formulario */
+}
+
+.contact button:hover {
+    background: #003366;
+}

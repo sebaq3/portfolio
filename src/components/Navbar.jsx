@@ -49,6 +49,7 @@ const Navbar = () => {
         <a href="#about-me" onClick={() => scrollToSection('about-me')}>{language === 'es' ? 'Sobre mí' : 'About Me'}</a>
         <a href="#projects" onClick={() => scrollToSection('projects')}>{language === 'es' ? 'Proyectos' : 'Projects'}</a>
         <a href="#cv" onClick={() => scrollToSection('cv')}>{language === 'es' ? 'CV' : 'CV'}</a>
+        <a href="#contact" onClick={() => scrollToSection('contact')}>{language === 'es' ? 'Contacto' : 'Contact'}</a>
         <select value={language} onChange={handleLanguageChange}>
           <option value="en">English</option>
           <option value="es">Español</option>

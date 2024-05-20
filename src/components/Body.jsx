@@ -4,6 +4,7 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Inicio from './Inicio';
 import Cv from './Cv';
+import Contact from './Contact';
 
 import '../styles/body.css';
 
@@ -18,7 +19,7 @@ const Body = () => {
         <AboutMe />
         <Projects />
         <Cv />
-
+        <Contact />
       </div>      
     </>
   );
