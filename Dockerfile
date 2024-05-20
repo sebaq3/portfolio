@@ -18,5 +18,5 @@ RUN npm run build
 EXPOSE 8080
 
 # Define the entry point for the container
-CMD ["npm", "run", "preview","--","--host"]
+CMD ["npm", "run", "preview","--","--host","&","node", "backend/server.js"]
 
